@@ -257,8 +257,8 @@
         display: none;
     }
     .navbar{
-        padding-top: 2vh;
-        padding-bottom: 1.5vh;
+        padding-top: 2.5vh;
+        padding-bottom: 1.7vh;
         position: sticky;
     }
     #search{
