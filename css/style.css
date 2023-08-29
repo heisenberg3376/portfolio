@@ -257,8 +257,8 @@
         display: none;
     }
     .navbar{
-        padding-top: 2.5vh;
-        padding-bottom: 1.7vh;
+        padding-top: 2.9vh;
+        padding-bottom: 2.9vh;
         position: sticky;
     }
     #search{
@@ -273,14 +273,22 @@
     .box-main{
         padding-top:20px;
     }
+    .box-main>p{
+        font-size: 17px;
+    }
     .box-main>img{
+        margin-top: 90px;
         width:50px;
         margin-bottom: 0;
+    }
+    .main-btn{
+        padding: 5px;
+        font-size: 18px;
     }
     .box-main>#quote{
         margin-top:0;
         padding-top:0;
-        font-size: 20px;
+        font-size: 30px;
         font-family: 'Kanit', sans-serif;
     }
     .background{
