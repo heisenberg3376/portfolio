@@ -2,6 +2,10 @@
     margin:0;
     padding:0;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 40px;
+}
 .navbar{
     display:flex;
     align-items: center;
@@ -36,7 +40,9 @@
     padding:4px;
     font-weight: 500;
 } 
-
+.rightNav>i{
+    display:none;
+}
 .logo{
     margin-right:29vw;
     margin-left:3vw;
@@ -66,6 +72,10 @@
     padding-top:10vh;
     padding-left:10vw;
     font-family: 'Roboto Condensed', sans-serif;
+}
+.box-main>a>button{
+    margin-top: 10vh;
+    margin-bottom: 0;
 }
 .main-btn{
     padding:3px;
@@ -106,7 +116,7 @@
 .main{
     height: 100vh;
 }
-.Projects{
+#Projects{
     background-color: white;
     padding-left:155px;
 }
@@ -141,20 +151,20 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:30px;
 }
-.buttns>button{
+.buttns>a>button{
     border: 2px solid black;
     padding:5px;
     border-radius: 8px;
     font-family: monospace;
     margin-right:29px;
 }
-.buttns>#vp:hover{
+.buttns>a>#vp:hover{
     color:rgb(19, 10, 80);
     border: 2px solid rgb(19, 10, 80);
     background-color: rgb(122,220,241);
     cursor:pointer;
 }
-.buttns>button:hover{
+.buttns>a>button:hover{
     color:rgb(19, 10, 80);
     border: 2px solid rgb(19, 10, 80);
     background-color: rgb(255, 235, 52);
@@ -215,28 +225,30 @@
     padding-top:30px;
     margin-bottom: 40px;
 }
-.each-icon{
+.each-icon>a{
     display: flex;
+    text-decoration: none;
+    color: black;
 }
-.each-icon>p{
+.each-icon>a>p{
     font-family: 'Trebuchet MS';
     margin-top:50px;
     font-size: 20px;
     transition: 0.3s;
 }
-.each-icon>p:hover{
+.each-icon>a>p:hover{
     cursor: pointer;
     transform:scale(1.1);
     color:rgb(40, 10, 158);
 }
-.each-icon>i{
+.each-icon>a>i{
     margin-top:40px;
     font-size:50px;
     transition: 0.3s;
     padding-right:10px;
     margin-right:50px;
 }
-.each-icon>i:hover{
+.each-icon>a>i:hover{
     cursor: pointer;
     transform:scale(1.1);
     color:rgb(40, 10, 158);
@@ -252,6 +264,9 @@
 @media (max-width:600px) {
     .logo{
         font-size:16px;
+    }
+    .rightNav>i{
+        display:inline;
     }
     .navlist li{
         display: none;
@@ -301,7 +316,7 @@
         display: flex;
         flex-direction: column;
     }
-    .Projects{
+    #Projects{
         padding-left: 20px;
         display: flex;
         flex-direction: column;
@@ -326,7 +341,7 @@
     .each-element{
         margin-bottom: 27px;
     }
-    .each-icon>p{
+    .each-icon>a>p{
         display: none;
     }
     .each-icon>i{
@@ -344,7 +359,7 @@
         border:5px solid grey;
         border-radius:20px;
         margin-left:30px;
-        margin-right:60px;
+        margin-right:0px;
         padding-top:30px;
         margin-bottom: 40px;
     }
@@ -354,7 +369,7 @@
         margin-right:30px;
         border-radius:30px;
         background-color: rgb(184, 249, 182);
-        padding:27px;
+        padding:28px;
         display: flex;
     }
     .line-1{
