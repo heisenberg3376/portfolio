@@ -5,6 +5,7 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 40px;
+    width:100%;
 }
 .navbar{
     display:flex;
